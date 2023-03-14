@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <!-- Slytesheet från både bootstrap och min egna css kod -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header med både logga, navbar och hamburgare på mobil. Bootstrap-mall -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img src="logo noak.eu.png" alt="Logotyp"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a class="navlink" href="index.html#rubrikstart">Mina Projekt!</a></li>
+                        <li><a class="navlink" href="om mig.html">Om mig!</a></li>
+                        <li><a class="navlink" href="kontakt.html">Kontakt!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- En div med bakrundsbild med text ovan -->
+    <main>
+        <div id="container">
+            <div id="text">
+                <h1>Välkommen till min sajt!</h1>
+            </div>
+        </div>
+
+        <!-- Mina projektboxar, med bild, rubirik och länk till projektbeskrivningar -->
+        <div id="rubrikstart">
+            <h1>Mina projekt!</h1>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://www.xn--sterlen-80a.se/wp-content/uploads/2022/04/210724-Hotell-Ba%CC%88ckaga%CC%8Arden15347-1536x1024.jpg"
+                    alt="Projekt 1">
+                <h3>Hotell Bäckagården</h3>
+                <a href="projekt 1.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.xn--sterlen-80a.se/wp-content/uploads/2021/02/gladsax-garshotell--1536x1152.jpeg"
+                    alt="Projekt 2">
+                <h3>Gladsax Gårdshotell</h3>
+                <a href="projekt 2.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.xn--sterlen-80a.se/wp-content/uploads/2018/02/Alle-pa-Osterlen.jpg"
+                    alt="Projekt 3">
+                <h3>Allé på Österlen</h3>
+                <a href="projekt 3.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.xn--sterlen-80a.se/wp-content/uploads/2022/04/Maglehems-Musteri-008-1.jpg"
+                    alt="Projekt 4">
+                <h3>Maglehems Musteri</h3>
+                <a href="projekt 4.html">Läs mer</a>
+            </div>
+            <div class="project-card">
+                <img src="https://www.xn--sterlen-80a.se/wp-content/uploads/2018/03/vitemolla_fallback.jpg"
+                    alt="Projekt 5">
+                <h3>Österlen.se</h3>
+                <a href="projekt 5.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://ravakra.se/wp-content/uploads/2021/06/Ravakra-framsida.jpg" alt="Projekt 6">
+                <h3>Rävåkra B&B</h3>
+                <a href="projekt 6.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://tuva.eu/wp-content/uploads/2021/01/Tuva.eu-197-rotated.jpg" alt="Projekt 7">
+                <h3>Tuva.eu</h3>
+                <a href="projekt 7.html">Läs mer</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://yvetteeklundband.com/wp-content/uploads/2020/09/YEB_PRESS_PIC_1.jpg" alt="Projekt 8">
+                <h3>Yvette Eklund Band</h3>
+                <a href="projekt 8.html">Läs mer</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Enkel footer med kontaktinformation -->
+    <Footer>
+        <div id="kontakt">
+            <a class="navlinkfoot" href="https://m.facebook.com/noak.karlsson/" target="_blank">
+                <h2>FACEBOOK</h2>
+            </a>
+            <a class="navlinkfoot" href="https://se.linkedin.com/in/noak-karlsson-0b1155204" target="_blank">
+                <h2>LINKEDIN</h2>
+            </a>
+        </div>
+        <div class="pic">
+        <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="favicon.png">
+            <source media="(max-width:767px)" srcset="favicon.png">
+            <img src="logo noak.eu.png" alt="Flowers" style="width:10rem;">
+          </picture>
+        </div>
+        <div>
+            <a class="navlinkfoot" href="tel:+46722337794">
+                <h2>072 233 77 94</h2>
+            </a>
+            <a class="navlinkfoot" href="mailto:info@noak.eu" target="_blank">
+                <h2>INFO@NOAK.EU</h2>
+            </a>
+        </div>
+    </Footer>
+
+    <!-- Java från bootstap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

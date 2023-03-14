@@ -1,0 +1,655 @@
+/* Margin 0 px för att plocka bort standardmargin */
+* {
+  margin: 0px;
+}
+
+:root {
+  --main-bg-color: rgb(30, 30, 30);
+  --font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  --text-color: white;
+  --text-color2: #FFC745;
+}
+
+
+/* Svart bakrund på headern */
+header {
+  background-color: black;
+}
+
+/* Vit hover på länkar i text */
+main div a:hover {
+  color: var(--text-color)
+}
+
+/* Inställningar för bakrundsbild startsida */
+#container {
+  background-image: url("noak\ bild.jpg");
+  background-size: cover;
+  margin: 0;
+  height: 650px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Rubrik startsida på bakrundsbild */
+main #text h1 {
+  color: var(--text-color);
+  font-size: 6rem;
+  padding-left: 30px;
+  font-family: var(--font-family);
+}
+
+/* Rubrik startsida under bild */
+#rubrikstart {
+  text-align: center;
+  padding-top: 25px;
+  color: var(--text-color2);
+  font-size: 3rem;
+  font-family: var(--font-family);
+}
+
+/* Bakrundsfärg för allt mellan footer och header */
+body {
+  font-family: var(--font-family);
+  background-color: var(--main-bg-color);
+}
+
+/* Inställningar för projekten på startsidan */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/* Inställningar för projekten på startsidan */
+.project-card {
+  width: 300px;
+  background-color: #E6B33E;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Inställningar för bilderna projekten på startsidan */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Inställningar för rubrikerna projekten på startsidan */
+.project-card h3 {
+  margin: 10px;
+  color: black;
+}
+
+
+/* Inställningar för knapp projekten på startsidan */
+.project-card a {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: var(--text-color2);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  font-family: var(--font-family);
+}
+
+/* Inställningar för knapphovring projekten på startsidan */
+.project-card a:hover {
+  background-color: var(--text-color);
+  color: var(--text-color2);
+}
+
+/* Inställningar för footern */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Inställningar för footerns länkar */
+.navlinkfoot {
+  color: var(--text-color2);
+  text-decoration: none;
+}
+
+/* Inställningar för footerns länkar vid hovring*/
+.navlinkfoot:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* flex för projektbeskrivningarna */
+.projekt {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+
+/* Startbilderna projektbeskrivningarna */
+.projekt img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Rubrikerna projektbeskrivningarna */
+.projekt h2 {
+  font-size: 5rem;
+  color: var(--text-color2);
+  margin-left: 100px;
+}
+
+/* Texterna projektbeskrivningarna */
+.projekt p {
+  margin-bottom: 1rem;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: var(--text-color2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Länkarna i text projektbeskrivningarna */
+.projekt a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* knapp i projektbeskrivningarna */
+.projekt .button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: black;
+  font-size: 2rem;
+  color: var(--text-color2);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  margin-left: 100px;
+}
+
+/* hovring knapp i projektbeskrivningarna */
+.projekt .button:hover {
+  background-color: var(--text-color);;
+  color: var(--text-color2);
+}
+
+/* bild galleri i projektbeskrivningarna */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* bild galleri i projektbeskrivningarna */
+.gallery img {
+  width: 22%;
+  height: auto;
+}
+
+/* css för om mig sidan */
+.ommig {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 20px;
+}
+
+/* Bild på om mig sidan */
+.cover-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-image: url('om\ mig.jpg');
+  background-size: cover;
+}
+
+/* Text på om mig sidan */
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: var(--text-color2);
+}
+
+/* Informationsruta */
+.info-box {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: black;
+  color: var(--text-color2);
+  padding: 20px;
+  margin: 20px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form-wrapper {
+  padding: 100px 0;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form {
+  padding: 30px 40px;
+  background-color: black;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form textarea {
+  resize: none;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-control::placeholder {
+  color: #3b3b3b;
+  font-weight: 500;
+  opacity: 1;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .form-control:focus {
+  border-color: var(--text-color2);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 20px #FFC745;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color2);
+  font-family: var(--font-family);
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .description {
+  color: var(--text-color2);
+  font-size: 14px;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--main-bg-color);
+  color: var(--text-color2);
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: var(--font-family);
+}
+
+/* Kontaktformulär css blandad med bootstrap */
+.contact-form .submit-button-wrapper input:hover {
+  background-color: rgb(255, 255, 255);
+
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-brand {
+  font-weight: bold;
+
+}
+
+/* css/ bootstrap för logo */
+.navbar-brand img {
+  height: 10rem;
+  transition: transform 2s;
+  padding-left: 50px;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("https://www.citypng.com/public/uploads/preview/transparent-hd-white-menu-burger-icon-31634946136ufll2pj5eo.png");
+  background-size: cover;
+  height: 3rem;
+  width: 3rem;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navlink {
+  color: var(--text-color2);
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--font-family);
+  margin-right: 1rem;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navlink:hover {
+  color: var(--text-color);;
+  font-size: 2em;
+  text-align: center;
+  font-family: var(--font-family);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-toggler {
+  border: none;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-toggler-icon {
+  height: 2px;
+  width: 20px;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* css/ bootstrap för nav/hamburgare */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Rätt typsnitt på h3 rubrikerna */
+.project-card h3 {
+  font-family: var(--font-family);
+}
+
+/* css för darkmode */
+@media (prefers-color-scheme: dark) {
+
+  /* Rubrik på startsida svart ist för vit */
+  main #text h1 {
+    color: rgb(0, 0, 0);
+    filter: brightness(0);
+    font-size: 6rem;
+    padding-left: 30px;
+    font-family: var(--font-family);
+  }
+
+  #container {
+    background-image: url("noak\ bild.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 650px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(0.5);
+  }
+
+  /* Projektens box är svart ist för gul */
+  .project-card {
+    width: 300px;
+    background-color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  /* texten är gul ist för svart */
+  .project-card h3 {
+    color: var(--text-color2);
+  }
+
+  /* Inställningar för bilderna projekten på startsidan i darkmode */
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+
+  /* Bild på om mig sidan */
+.cover-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  background-image: url('om\ mig.jpg');
+  background-size: cover;
+  filter: brightness(0.5);
+}
+}
+
+/* css för mobilanpasning */
+@media (max-width: 767px) {
+
+  /* css för mobilanpasning av navmeny */
+  .navbar-nav {
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+  }
+
+  /* css för mobilanpasning av navmeny */
+  .navbar-nav .nav-item {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* css för mobilanpasning logo */
+  .navbar-brand img {
+    height: 10rem;
+    transition: transform 2s;
+    padding-left: 0px;
+  }
+
+  /* css för mobilanpasning navmeny */
+  .navbar-nav .nav-link {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+  }
+
+  /* css för mobilanpasning text på bilden på startsidan */
+  main #text h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-family);
+  }
+
+  /* css för mobilanpasning rubrik i projektbeskrivningarna */
+  .projekt h2 {
+    font-size: 3rem;
+    color: var(--text-color2);
+    margin: 5px;
+  }
+
+  /* css för mobilanpasning text i projektbeskrivningarna */
+  .projekt p {
+    margin-bottom: 1rem;
+    color: var(--text-color2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+  }
+
+  /* css för mobilanpasning knapp i projektbeskrivningarna */
+  .projekt .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: black;
+    font-size: 2rem;
+    color: var(--text-color2);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+
+  /* css för mobilanpasning bildgalleri i projektbeskrivningarna */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  /* css för mobilanpasning bilden på startsidan */
+  #container {
+    height: auto;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #container::before {
+    content: "";
+    display: block;
+    height: 300px;
+  }
+
+  /* css för mobilanpasning bilden på projektbeskrivningen */
+  .bild.projekt img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* css för mobilanpasning bildgalleriet på projektbeskrivningen */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* css för mobilanpasning text i projektbeskrivningen */
+  .text {
+    font-size: 16px;
+  }
+
+  /* css för mobilanpasning för sidan om mig */
+  .ommig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* css för mobilanpasning för sidan om mig */
+  .cover-image {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* css för mobilanpasning för sidan om mig */
+  .info-box {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  /* css för mobilanpasning för sidan om mig */
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    color: var(--text-color2);
+  }
+
+.pic {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+/* Inställningar för mina keyframes på startsidan */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#text h1 {
+  animation: scale-up 2s ease-in-out;
+}
+
+.project-card {
+  animation: fade-in 5s ease-in-out;
+}
+
+.project-card:nth-child(odd) {
+  animation: slide-in 5s ease-in-out;
+}
